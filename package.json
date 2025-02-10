@@ -1,0 +1,31 @@
+{
+  "name": "sortscape",
+  "version": "1.0.0",
+  "description": "visualize sorting algorithms in 3D",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "tsc && http-server . -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylanwcarter/sortscape.git"
+  },
+  "author": "Dylan Carter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dylanwcarter/sortscape/issues"
+  },
+  "homepage": "https://github.com/dylanwcarter/sortscape#readme",
+  "devDependencies": {
+    "@types/three": "^0.173.0",
+    "http-server": "^14.1.1",
+    "prettier": "^3.5.0",
+    "tsc": "^2.0.4",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "lil-gui": "^0.20.0",
+    "three": "^0.173.0"
+  }
+}
