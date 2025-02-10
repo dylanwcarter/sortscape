@@ -1,13 +1,12 @@
 {
-  "headers": [
+  "builds": [
     {
-      "source": "/dist/(.*)",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/javascript"
-        }
-      ]
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
     }
-  ]
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "/$1" }]
 }

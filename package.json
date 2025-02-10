@@ -5,7 +5,9 @@
   "main": "index.ts",
   "type": "module",
   "scripts": {
-    "start": "tsc && http-server . -o"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,8 @@
     "http-server": "^14.1.1",
     "prettier": "^3.5.0",
     "tsc": "^2.0.4",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
   },
   "dependencies": {
     "lil-gui": "^0.20.0",

@@ -4,18 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SortScape</title>
-
-    <!-- Import map for modules -->
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "./node_modules/three/build/three.module.js",
-          "three/examples/jsm/controls/OrbitControls": "./node_modules/three/examples/jsm/controls/OrbitControls.js",
-          "lil-gui": "./node_modules/lil-gui/dist/lil-gui.esm.js"
-        }
-      }
-    </script>
-
     <style>
       body {
         margin: 0;
@@ -77,13 +65,13 @@
         color: #fff;
       }
     </style>
-    <link rel="icon" href="assets/favicon-logo.jpeg" type="image/jpeg" />
+    <link rel="icon" href="public/favicon-logo.jpeg" type="image/jpeg" />
   </head>
 
   <body>
     <!-- Header displayed in the top-right corner -->
     <div id="site-header">
-      <img src="assets/favicon-logo.jpeg" alt="SortScape Logo" />
+      <img src="public/favicon-logo.jpeg" alt="SortScape Logo" />
       <span>SortScape</span>
     </div>
 
@@ -93,6 +81,6 @@
     <div id="info-box"></div>
 
     <!-- Main script in TypeScript (compiled to JS) -->
-    <script type="module" src="./dist/index.js"></script>
+    <script type="module" src="/src/index.ts"></script>
   </body>
 </html>
